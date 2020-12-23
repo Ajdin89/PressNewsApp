@@ -4,10 +4,12 @@ import Aside from './layout/aside';
 
 const Home = () => {
 	return (
-		<div className='main'>
-			<News />
-			<Aside />
-		</div>
+		<>
+			<div className='main'>
+				<News />
+				<Aside />
+			</div>
+		</>
 	);
 };
 
