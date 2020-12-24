@@ -8,61 +8,54 @@ import './Navbar.css';
 
 const Navbar = () => {
 	return (
-		<div>
-			<nav className='navbar-container'>
-				<div className='logo-container'>
-					<h1>asioso</h1>
-					<span>digital business #simple</span>
-				</div>
-				<ul className='navbar-menu'>
-					<li className='nav-item'>
-						<a href='#' className='nav-link'>
-							Home
-						</a>
-					</li>
-					<li className='nav-item'>
-						<a href='#' className='nav-link'>
-							News{' '}
-						</a>
-						<i className='fas fa-angle-down'></i>
-					</li>
-					<li className='nav-item'>
-						<a href='#' className='nav-link'>
-							Gadgets
-						</a>
-					</li>
-					<li className='nav-item'>
-						<a href='#' className='nav-link'>
-							Videos
-						</a>
-					</li>
-					<li className='nav-item'>
-						<a href='#' className='nav-link'>
-							Reviews
-						</a>
-					</li>
-					<li className='nav-item'>
-						<a href='#' className='nav-link'>
-							Contact us
-						</a>
-					</li>
-				</ul>
-				<div className='wrap-icon'>
-					<Icon icon={rssIcon} color='#fff' width='15' className='nav-icon' />
-					<Icon
-						icon={androidFilled}
-						color='#fff'
-						width='20'
-						className='nav-icon'
-					/>
-					<Icon
-						icon={appleFilled}
-						color='#fff'
-						width='20'
-						className='nav-icon'
-					/>
-				</div>
-			</nav>
+		<div className='navbar-container'>
+			<div className='logo-container'>
+				<h1>asioso</h1>
+				<span>digital business #simple</span>
+			</div>
+			<ul className='navbar-menu'>
+				<li className='nav-item'>
+					<a href='#' className='nav-link'>
+						Home
+					</a>
+				</li>
+				<li className='nav-item'>
+					<a href='#' className='nav-link'>
+						News{' '}
+					</a>
+					<i className='fas fa-angle-down'></i>
+				</li>
+				<li className='nav-item'>
+					<a href='#' className='nav-link'>
+						Gadgets
+					</a>
+				</li>
+				<li className='nav-item'>
+					<a href='#' className='nav-link'>
+						Videos
+					</a>
+				</li>
+				<li className='nav-item'>
+					<a href='#' className='nav-link'>
+						Reviews
+					</a>
+				</li>
+				<li className='nav-item'>
+					<a href='#' className='nav-link'>
+						Contact us
+					</a>
+				</li>
+			</ul>
+			<div className='wrap-icon'>
+				<Icon icon={rssIcon} color='#fff' width='15' className='nav-icon' />
+				<Icon
+					icon={androidFilled}
+					color='#fff'
+					width='20'
+					className='nav-icon'
+				/>
+				<Icon icon={appleFilled} color='#fff' width='20' className='nav-icon' />
+			</div>
 		</div>
 	);
 };

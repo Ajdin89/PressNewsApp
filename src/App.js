@@ -8,12 +8,12 @@ import './App.css';
 
 const App = () => {
 	return (
-		<div>
+		<>
 			<Navbar />
 			<Header />
 			<Home />
 			<Footer />
-		</div>
+		</>
 	);
 };
 

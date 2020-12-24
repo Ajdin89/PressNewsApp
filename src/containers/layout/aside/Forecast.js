@@ -24,7 +24,6 @@ const Forecast = () => {
 				`${API.baseURL}weather?q=Sarajevo,bih&units=metric&appid=${API.key}`
 			);
 			// console.log(response.data);
-			setIsLoading(false);
 			setWeather({
 				name: response.data.name,
 				country: response.data.sys.country,
@@ -32,6 +31,7 @@ const Forecast = () => {
 				description: response.data.weather[0].main,
 				icon: response.data.weather[0].icon,
 			});
+			setIsLoading(false);
 		};
 		getWeather();
 	}, []);
@@ -47,7 +47,7 @@ const Forecast = () => {
 						</h1>
 						<div className='temp'>{Math.floor(weather.temperature)}&#8451;</div>
 						<div className='icon-wrapp'>
-							<img src={`${API.iconURL + weather.icon}.png`} alt='icon' />
+							<img src={`${API.iconURL}${weather.icon}.png`} alt='icon' />
 						</div>
 						<div className='weather-description'>{weather.description}</div>
 					</div>
