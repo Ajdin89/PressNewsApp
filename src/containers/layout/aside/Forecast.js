@@ -38,13 +38,13 @@ const Forecast = () => {
 
 	return (
 		<div>
-			<h3>Weather Forecast</h3>
+			<h6 className="title">Weather Forecast</h6>
 			{!isLoading ? (
 				<div className='forecast-box'>
-					<div className='wrapper'>
-						<h1 className='location'>
+					<div className='forecast-content'>
+						<h2 className='location'>
 							{weather.name}, {weather.country}
-						</h1>
+						</h2>
 						<div className='temp'>{Math.floor(weather.temperature)}&#8451;</div>
 						<div className='icon-wrapp'>
 							<img src={`${API.iconURL}${weather.icon}.png`} alt='icon' />

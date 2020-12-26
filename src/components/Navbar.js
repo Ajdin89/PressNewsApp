@@ -14,33 +14,32 @@ const Navbar = () => {
 				<span>digital business #simple</span>
 			</div>
 			<ul className='navbar-menu'>
-				<li className='nav-item'>
+				<li>
 					<a href='#' className='nav-link'>
 						Home
 					</a>
 				</li>
-				<li className='nav-item'>
+				<li>
 					<a href='#' className='nav-link'>
-						News{' '}
+						News <i className='fas fa-angle-down'></i>
 					</a>
-					<i className='fas fa-angle-down'></i>
 				</li>
-				<li className='nav-item'>
+				<li>
 					<a href='#' className='nav-link'>
 						Gadgets
 					</a>
 				</li>
-				<li className='nav-item'>
+				<li>
 					<a href='#' className='nav-link'>
 						Videos
 					</a>
 				</li>
-				<li className='nav-item'>
+				<li>
 					<a href='#' className='nav-link'>
 						Reviews
 					</a>
 				</li>
-				<li className='nav-item'>
+				<li>
 					<a href='#' className='nav-link'>
 						Contact us
 					</a>

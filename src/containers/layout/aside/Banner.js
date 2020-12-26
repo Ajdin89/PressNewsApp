@@ -4,7 +4,7 @@ import banner from '../../../images/banner.jpg';
 const Banner = () => {
 	return (
 		<>
-			<h2>Banner</h2>
+			<h6 className="title">Banner</h6>
 			<div className='banner-box'>
 				<img src={banner} alt='banner' />
 			</div>

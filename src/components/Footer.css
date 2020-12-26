@@ -37,7 +37,7 @@
 .footer-logo span {
 	font-size: 8px;
 	color: #fefefe;
-	margin-top: -10px;
+	margin-top: -18px;
 	margin-left: 40px;
 }
 
@@ -62,6 +62,10 @@
 	color: #fefefe;
 }
 
+.input-group {
+	display: flex;
+}
+
 .input-txt {
 	height: 40px;
 	width: 310px;
@@ -76,13 +80,17 @@
 	font-size: 12px;
 	text-transform: uppercase;
 	height: 40px;
-	padding: 14px 20px;
+	padding: 13px 20px;
 	border: none;
 	cursor: pointer;
 }
 
 .btn-submit:active {
 	transform: scale(0.98);
+}
+
+.btn-submit:focus {
+	outline: none;
 }
 
 .footer-links {
@@ -135,4 +143,3 @@
 	background: #93bd33;
 	color: #fefefe;
 }
-

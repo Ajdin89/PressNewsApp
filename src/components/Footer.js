@@ -22,7 +22,7 @@ const Footer = () => {
 							<i className='fab fa-google-plus-g'></i>
 							<i className='fab fa-pinterest'></i>
 						</div>
-						<div>
+						<div className="input-group">
 							<input
 								type='text'
 								placeholder='Enter your email adress'

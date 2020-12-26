@@ -3,15 +3,18 @@ import Container from '../shared/Container';
 import Moment from 'moment';
 import newsImg from '../../images/news-headlines.jpg';
 
-const NewsItems = ({ news }) => {
+const NewsDetails = ({ news, goBack }) => {
 	return (
 		<Container>
-			<div className='section'>
+			<div className='news-wrapper'>
+				<button className='btn btn-primary mt-4 mb-4' onClick={() => goBack()}>
+					Back
+				</button>
 				<div>
 					{news.image !== 'None' ? (
-						<img src={news.image} alt='img' />
+						<img src={news.image} alt='img'/>
 					) : (
-						<img src={newsImg} alt='img' />
+						<img src={newsImg} alt='img'/>
 					)}
 				</div>
 				<span className='item-category'>{news.category}</span>
@@ -28,4 +31,4 @@ const NewsItems = ({ news }) => {
 	);
 };
 
-export default NewsItems;
+export default NewsDetails;
