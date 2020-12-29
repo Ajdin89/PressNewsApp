@@ -38,7 +38,7 @@ const Forecast = () => {
 
 	return (
 		<div>
-			<h6 className="title">Weather Forecast</h6>
+			<h6 className='title'>Weather Forecast</h6>
 			{!isLoading ? (
 				<div className='forecast-box'>
 					<div className='forecast-content'>

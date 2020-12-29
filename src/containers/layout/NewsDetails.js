@@ -12,9 +12,9 @@ const NewsDetails = ({ news, goBack }) => {
 				</button>
 				<div>
 					{news.image !== 'None' ? (
-						<img src={news.image} alt='img'/>
+						<img src={news.image} alt='img' />
 					) : (
-						<img src={newsImg} alt='img'/>
+						<img src={newsImg} alt='img' />
 					)}
 				</div>
 				<span className='item-category'>{news.category}</span>

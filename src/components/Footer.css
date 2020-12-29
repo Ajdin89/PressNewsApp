@@ -12,10 +12,7 @@
 	justify-content: space-between;
 	align-items: center;
 	margin: 0 auto;
-}
-
-.social-media {
-	margin-right: 185px;
+	padding: 10px;
 }
 
 .footer-logo {
@@ -142,4 +139,27 @@
 	padding: 7px 10px;
 	background: #93bd33;
 	color: #fefefe;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1200px) {
+	.footer-container {
+		justify-content: space-around;
+	}
+}
+
+@media (max-width: 960px) {
+	.footer-container {
+		flex-direction: column;
+	}
+
+	.footer-links {
+		display: none;
+	}
+}
+
+@media (max-width: 500px) {
+	.input-txt {
+		width: auto;
+	}
 }

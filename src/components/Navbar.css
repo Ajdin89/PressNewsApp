@@ -2,9 +2,14 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	height: 70px;
 	position: sticky;
 	background: #93bd33;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.nav {
+	display: flex;
 }
 
 .logo-container {
@@ -13,7 +18,7 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	margin: -7px 0 0 20px;
+	margin: -5px 15px 0 20px;
 }
 
 .logo-container h1 {
@@ -35,7 +40,6 @@
 	justify-content: center;
 	align-items: center;
 	color: #fff;
-	margin-left: -520px;
 	margin-top: 18px;
 }
 
@@ -58,4 +62,55 @@
 .nav-icon {
 	margin-left: 10px;
 	cursor: pointer;
+}
+
+.menu-icon {
+	position: absolute;
+	top: 15px;
+	right: 20px;
+	color: #fefefe;
+	font-size: 25px;
+	cursor: pointer;
+	display: none;
+}
+
+@media (max-width: 960px) {
+	.navbar-container {
+		position: relative;
+		width: 100%;
+		align-items: flex-start;
+	}
+
+	.menu {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+	}
+
+	.navbar-menu {
+		flex-direction: column;
+		width: 100%;
+		position: absolute;
+		top: 60px;
+		background: #93bd33;
+		text-align: center;
+		margin: auto;
+		padding-bottom: 10px;
+		z-index: 1;
+		display: none;
+	}
+
+	.navbar-menu.active {
+		display: block;
+		left: 0;
+	}
+
+	.wrap-icon {
+		display: none;
+	}
+
+	.menu-icon {
+		display: block;
+	}
 }

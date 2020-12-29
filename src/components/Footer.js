@@ -7,7 +7,7 @@ const Footer = () => {
 		<>
 			<div className='footer'>
 				<div className='footer-container'>
-					<div className='social-media'>
+					<div>
 						<div className='footer-logo'>
 							<h1>asioso</h1>
 							<span>digital business #simple</span>
@@ -22,7 +22,7 @@ const Footer = () => {
 							<i className='fab fa-google-plus-g'></i>
 							<i className='fab fa-pinterest'></i>
 						</div>
-						<div className="input-group">
+						<div className='input-group'>
 							<input
 								type='text'
 								placeholder='Enter your email adress'

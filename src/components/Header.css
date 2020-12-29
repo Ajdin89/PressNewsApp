@@ -6,17 +6,16 @@
 
 .header-container {
 	height: 100%;
-	max-width: 1180px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin: 0 auto;
 }
 
 .header-box {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-left: 95px;
 }
 
 .header-box i {
@@ -25,26 +24,49 @@
 	font-size: 8px;
 	border-radius: 100%;
 	padding: 10px;
+	margin: -8px 8px 0 0;
+}
+
+.header-box h5 {
 	margin-right: 10px;
+	font-weight: 600;
 }
 
-.header-box h3 {
-	margin-right: 15px;
-}
-
-.header-box p {
+.header-box small {
 	font-size: 10px;
 	font-style: italic;
 	color: #666;
 	letter-spacing: 1.2px;
-	margin-top: 6px;
+	margin-top: -5px;
 }
 
 .header-tabs {
 	display: flex;
+	margin-right: 85px;
 }
 
 .header-tabs .header-link {
 	color: #222;
 	font-size: 12px;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 960px) {
+	.header-container {
+		justify-content: space-around;
+	}
+}
+
+@media (max-width: 680px) {
+	.header-container {
+		justify-content: center;
+	}
+	
+	.header-box {
+		margin-left: 0;
+	}
+
+	.header-tabs {
+		display: none;
+	}
 }

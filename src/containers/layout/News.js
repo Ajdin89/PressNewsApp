@@ -72,7 +72,7 @@ const News = ({ setNewsDetails }) => {
 							.slice((current - 1) * take, take * current)
 							.map((news, id) => (
 								<div key={id} onClick={() => setNewsDetails(news)}>
-									<NewsItems  news={news} />
+									<NewsItems news={news} />
 								</div>
 							))
 					)}
