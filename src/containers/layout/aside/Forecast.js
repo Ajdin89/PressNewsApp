@@ -4,8 +4,8 @@ import './Forecast.css';
 
 const API = {
 	key: '22b170583de570e1cae6dca6bf1520be',
-	baseURL: 'http://api.openweathermap.org/data/2.5/',
-	iconURL: 'http://openweathermap.org/img/wn/',
+	baseURL: 'https://api.openweathermap.org/data/2.5/',
+	iconURL: 'https://openweathermap.org/img/wn/',
 };
 
 const Forecast = () => {

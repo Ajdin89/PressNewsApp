@@ -42,7 +42,7 @@ const News = ({ setNewsDetails }) => {
 			const response = await axios.get(
 				`${API.baseURL}latest-news?apiKey=${API.key}`
 			);
-
+				console.log(response.data);
 			setItems(response.data.news);
 			setIsLoading(false);
 		};
